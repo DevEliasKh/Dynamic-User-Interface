@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+}
+
+header {
+	background-color: #fff;
+	height: 20vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 1rem;
+}
+
+.logo svg {
+	fill: #000;
+	height: 100px;
+}
+ul {
+	display: flex;
+	gap: 100px;
+	padding: 3rem;
+}
+
+.drop-menu {
+	display: grid;
+	gap: 5px;
+	background-color: darkgray;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #000;
+}
+
+.drop-menu div:first-child {
+	display: flex;
+	align-items: center;
+}
+
+.drop-menu svg {
+	fill: #000;
+	height: 20px;
+}
+
+.hidden {
+	display: none;
+}
+li {
+	list-style-type: none;
+}
+main {
+	background-color: gray;
+	height: 70vh;
+}
+footer {
+	background-color: #000;
+	height: 10vh;
+}
