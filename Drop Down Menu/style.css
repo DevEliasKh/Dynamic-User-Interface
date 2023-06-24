@@ -22,7 +22,7 @@ header {
 }
 ul {
 	display: flex;
-	gap: 100px;
+	gap: 200px;
 	padding: 3rem;
 }
 
@@ -58,4 +58,14 @@ main {
 footer {
 	background-color: #000;
 	height: 10vh;
+}
+
+/* div over divs */
+
+header {
+	position: relative;
+}
+
+.drop-menu {
+	position: absolute;
 }

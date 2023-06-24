@@ -1,5 +1,8 @@
-const menu = document.querySelector('.drop-menu');
+const menu = document.querySelector('.drop-menu div:first-child');
+const options = document.querySelectorAll('.option');
 
-menu.addEventListener('hover', () => {
-	const options = document.querySelectorAll();
+menu.addEventListener('click', () => {
+	options.forEach((element) => {
+		element.classList.toggle('hidden');
+	});
 });
