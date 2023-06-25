@@ -33,7 +33,18 @@ function pervious() {
 	showedImage = [];
 }
 
-function dotImageChanger() {}
-
 nextBtn.addEventListener('click', next);
 perviousBtn.addEventListener('click', pervious);
+dot.forEach((element) => {
+	element.addEventListener('click', () => {
+		element.style.backgroundColor = 'white';
+		const imageNum = +element.getAttribute('data-num');
+		images.forEach((element) => {
+			if (!element.classList.contains('hidden')) {
+				element.classList.add('hidden');
+			}
+		});
+		document.querySelector(`[data-num="${imageNum}"]`).classList.toggle('hidden');
+	});
+	element.style.backgroundColor = 'black';
+});
