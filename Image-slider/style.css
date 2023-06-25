@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100vw;
+	height: 40vh;
+	background-color: grey;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 'image';
+
+	justify-content: center;
+	align-content: center;
+}
+
+main div {
+	grid-area: image;
+
+	display: grid;
+	justify-content: center;
+}
+
+img {
+	width: auto;
+	height: 40vh;
+}
+
+.btn {
+	width: 100vw;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+}
+
+.dot {
+	background-color: #000;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 2px solid #000;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	padding-top: 5px;
+}
+
+.hidden {
+	visibility: hidden;
+}
